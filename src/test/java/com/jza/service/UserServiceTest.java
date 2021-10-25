@@ -33,7 +33,7 @@ public class UserServiceTest {
 
 
 	@Test
-	@DisplayName("For successful response, return correct RepoInfo")
+	@DisplayName("For successful gihub api fetch, return correct UserInfo")
 	void givenSampleGitbubResponseBuildUserInfo() throws IOException, ParseException {
 		// given
 		String login = "octocat";
@@ -58,6 +58,7 @@ public class UserServiceTest {
 		return UserInfo.builder()
 				.id("583231")
 				.name("The Octocat")
+				.type("User")
 				.avatarUrl("https://avatars.githubusercontent.com/u/583231?v=4")
 				.calculations(0.01466275659824047)
 				.login("octocat")

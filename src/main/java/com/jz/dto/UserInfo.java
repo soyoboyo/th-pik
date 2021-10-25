@@ -24,6 +24,7 @@ public class UserInfo {
 				.id(details.getId())
 				.login(details.getLogin())
 				.name(details.getName())
+				.type(details.getType())
 				.avatarUrl(details.getAvatarUrl())
 				.createdAt(details.getCreatedAt())
 				.calculations(details.getCalculations())
